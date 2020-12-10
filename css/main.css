@@ -13,6 +13,9 @@
 }
 
 /* Variabele Kleuren */
+/* Variabele Kleuren */
+/* Variabele Kleuren */
+
 :root {
 	--blauw: #242a36;
 	--goud: #bda76e;
@@ -20,9 +23,12 @@
 }
 
 /* Globale Stijlen */
+/* Globale Stijlen */
+/* Globale Stijlen */
 
 html {
 	font-size: 10px;
+	overflow-x: hidden;
 }
 
 body {
@@ -49,13 +55,32 @@ ul {
 	list-style: none;
 }
 
-section {
-	padding: 5rem 0;
+.container-full {
+	width: 100%;
+	padding: 0 2rem;
+	margin: 0 auto;
+}
+
+.container {
+	width: 80%;
+	padding: 0 2rem;
+	margin: 0 auto;
+}
+
+.button {
+	color: var(--wit);
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 1rem 1.5rem;
+	border: none;
 }
 
 /* Header Styling */
+/* Header Styling */
+/* Header Styling */
 
-.header {
+.header-nav {
 	width: 100%;
 	height: 10rem;
 	display: flex;
@@ -64,30 +89,29 @@ section {
 	top: 0;
 	left: 0;
 	z-index: 1000;
-	background: url(../images/placeholder.jpg);
-	background-size: cover;
-	height: 80vh;
 }
 
 .logo img {
-	width: 150px;
+	width: 100px;
 	height: auto;
+	margin-top: 15px;
 }
 
-.header .container {
+.header-nav .container-full {
 	width: 100%;
 	padding: 0 2rem;
 	margin: 0 auto;
-	background: rgb(36, 42, 54);
 	background: linear-gradient(
 		180deg,
 		rgba(36, 42, 54, 1) 0%,
 		rgba(36, 42, 54, 1) 30%,
-		rgba(36, 42, 54, 0.5970763305322129) 70%,
+		rgba(36, 42, 54, 0.5970763305322129) 50%,
 		rgba(36, 42, 54, 0) 100%
 	);
 }
 
+/* Header Nav */
+/* Header Nav */
 /* Header Nav */
 
 .nav {
@@ -153,4 +177,150 @@ section {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	padding: 1.5rem;
+	transition: background 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+	background: var(--wit);
+	color: var(--goud);
+}
+
+/* Hero in header styling */
+/* Hero in header styling */
+/* Hero in header styling */
+.header-content {
+	width: 100vw;
+}
+
+.header-content video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	z-index: -2;
+}
+
+.hero {
+	width: 100%;
+	height: 90vh;
+	background: url(../images/smallvideo.mp4) center no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+	z-index: 0;
+}
+
+.hero::before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: inherit;
+	background-color: rgba(36, 42, 54, 0.5);
+	z-index: -1;
+}
+
+.main-heading {
+	color: var(--wit);
+	line-height: 1;
+	text-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.5);
+}
+
+.title {
+	font-family: "Poppins", sans-serif;
+	font-size: 4.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0.5rem;
+}
+
+.subtitle {
+	font-size: 3.6rem;
+	font-weight: 300;
+	margin: 0.5rem;
+	font-style: italic;
+}
+
+.button-hero {
+	margin-top: 50px;
+	background-color: var(--goud);
+	border-radius: 5px;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.button-hero:hover {
+	background-color: var(--blauw);
+}
+
+/* Sectie boeken */
+
+.kamer-boeken {
+	height: 10vh;
+	background-color: var(--blauw);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.kamer-boeken .container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.kamer-boeken h1 {
+	color: var(--goud);
+	font-family: "Poppins", sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 3rem;
+}
+
+.kamer-boeken .input-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.kamer-boeken .form {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.kamer-boeken label {
+	display: block;
+	margin-bottom: 0.5rem;
+	color: var(--goud);
+}
+
+.kamer-boeken .button-beschikbaarheid {
+	background-color: var(--goud);
+	color: var(--blauw);
+	transition: color 0.2s ease-in-out;
+	padding: 4.2vh 15px;
+}
+
+.kamer-boeken .button-beschikbaarheid:hover {
+	color: var(--wit);
+}
+
+/* Menu Media Query */
+
+@media screen and (max-width: 1270px) {
+	.kamer-boeken {
+		display: none;
+	}
+
+	.hero {
+		height: 100vh;
+	}
 }

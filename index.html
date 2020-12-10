@@ -35,8 +35,8 @@
 		<title>J&K Hotel</title>
 	</head>
 	<body>
-		<header class="header">
-			<div class="container">
+		<header class="header-nav">
+			<div class="container-full">
 				<nav class="nav">
 					<a href="index.html" class="logo">
 						<img src="images/logo/logo-transparent.png" alt="" />
@@ -68,7 +68,53 @@
 				</nav>
 			</div>
 		</header>
+
+		<header class="header-content">
+			<video class="header-video" src="./images/smallvideo.mp4" autoplay muted loop></video>
+			<div class="hero">
+				<div class="container-full">
+					<div class="main-heading">
+						<h1 class="title">Ontdek</h1>
+						<h2 class="subtitle">Relaxeren in Luxe</h2>
+					</div>
+					<br />
+					<br />
+					<a href="#hoofdinhoud" class="button button-hero">Neem een kijkje</a>
+				</div>
+			</div>
+
+			<section class="kamer-boeken">
+				<div class="container">
+					<form action="" class="form">
+						<h1>Boek een kamer</h1>
+						<div class="input-group">
+							<label for="aankomstdatum">Aankomstdatum</label>
+							<input id="aankomstdatum" type="date" />
+						</div>
+						<div class="input-group">
+							<label for="vertrekdatum">Vertrekdatum</label>
+							<input id="vertrekdatum" type="date" />
+						</div>
+						<a class="button button-beschikbaarheid" href="">Beschikbaarheid tonen</a>
+					</form>
+				</div>
+			</section>
+		</header>
+
+		<section class="main-content" id="hoofdinhoud">
+			<div class="container">
+				<h1>Hoofdinhoud</h1>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati nisi eius iste quae velit iusto alias
+					reprehenderit placeat corrupti fugit. Amet ea qui molestias in deserunt neque eaque doloribus, nostrum magni
+					quos sapiente quibusdam id dolorem consectetur, cumque dolores odit modi provident! Repellat, perspiciatis
+					dignissimos. Iste saepe sit ullam libero dignissimos asperiores commodi, assumenda ut nam facilis quia
+					voluptates. Id eaque odit consequatur impedit numquam ab dicta, laboriosam soluta praesentium deleniti, quam
+					quo quae dolor cupiditate debitis eligendi, est velit?
+				</p>
+			</div>
+		</section>
 		<script src="javascript/menu.js"></script>
-		<script src="javascript/script.js"></script>
+		<script src="javascript/app.js"></script>
 	</body>
 </html>
