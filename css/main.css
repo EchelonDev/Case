@@ -114,10 +114,22 @@ ul {
 /* Header Nav */
 /* Header Nav */
 
+/* DESKTOP MENU */
+/* DESKTOP MENU */
+/* DESKTOP MENU */
+
+/* MOBILE MENU */
+/* MOBILE MENU */
+/* MOBILE MENU */
+
 .nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.nav-logo {
+	display: none;
 }
 
 .hamburger-menu {
@@ -303,13 +315,13 @@ ul {
 
 .kamer-boeken .button-beschikbaarheid {
 	background-color: var(--goud);
-	color: var(--blauw);
+	color: var(--wit);
 	transition: color 0.2s ease-in-out;
 	padding: 4.2vh 15px;
 }
 
 .kamer-boeken .button-beschikbaarheid:hover {
-	color: var(--wit);
+	color: var(--blauw);
 }
 
 /* Menu Media Query */
@@ -321,5 +333,64 @@ ul {
 
 	.hero {
 		height: 100vh;
+	}
+
+	.kamer-boeken {
+		display: none;
+	}
+
+	.hero {
+		height: 100vh;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.hamburger-menu {
+		display: none;
+	}
+
+	.nav-list {
+		position: initial;
+		width: initial;
+		height: initial;
+		flex-direction: row;
+		justify-content: initial;
+		opacity: 1;
+		transform: scale(1);
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+	.nav-item:not(:last-child) {
+		margin-right: 3rem;
+		margin-bottom: 0;
+	}
+
+	.nav-link {
+		font-size: 1.5rem;
+		font-weight: normal;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.nav {
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		left: 30px;
+	}
+
+	.nav-logo {
+		display: initial;
+	}
+
+	.nav-logo {
+		display: initial;
+	}
+
+	.nav-logo img {
+		width: 100px;
+		height: auto;
 	}
 }
