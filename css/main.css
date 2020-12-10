@@ -205,7 +205,6 @@ ul {
 .hero {
 	width: 100%;
 	height: 90vh;
-	background: url(../images/smallvideo.mp4) center no-repeat;
 	background-size: cover;
 	display: flex;
 	align-items: center;
