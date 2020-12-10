@@ -20,7 +20,7 @@
 			integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
 			crossorigin="anonymous"
 		/>
-		<!-- Normalize CSS -->
+		Normalize CSS
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -70,7 +70,7 @@
 			<video class="header-video" src="./images/smallvideo.mp4" autoplay muted loop></video>
 			<div class="hero">
 				<div class="container-full">
-					<div class="main-heading">
+					<div class="header-text">
 						<h1 class="title">Ontdek</h1>
 						<h2 class="subtitle">Relaxeren in Luxe</h2>
 					</div>
@@ -82,7 +82,7 @@
 
 			<section class="kamer-boeken">
 				<div class="container">
-					<form action="" class="form">
+					<form action="" class="boeken-form">
 						<h1>Boek een kamer</h1>
 						<div class="input-group">
 							<label for="aankomstdatum">Aankomstdatum</label>
@@ -100,17 +100,66 @@
 
 		<section class="main-content" id="hoofdinhoud">
 			<div class="container">
-				<h1>Hoofdinhoud</h1>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati nisi eius iste quae velit iusto alias
-					reprehenderit placeat corrupti fugit. Amet ea qui molestias in deserunt neque eaque doloribus, nostrum magni
-					quos sapiente quibusdam id dolorem consectetur, cumque dolores odit modi provident! Repellat, perspiciatis
-					dignissimos. Iste saepe sit ullam libero dignissimos asperiores commodi, assumenda ut nam facilis quia
-					voluptates. Id eaque odit consequatur impedit numquam ab dicta, laboriosam soluta praesentium deleniti, quam
-					quo quae dolor cupiditate debitis eligendi, est velit?
-				</p>
+				<div class="row">
+					<div class="col-2">
+						<h1>Hoofdinhoud</h1>
+						<p>
+							Welkom in ons kleinschalig, sfeervolle, warm hotel. Dit uniek plekje is voor jong en oud, zowel zakelijk
+							als privé.
+							<br /><br />
+							Ons hotel is gelegen te … en wij beschikken over 3 zeer mooie kamers met moderne faciliteiten. Een ideale
+							plaats om te onthaasten, ontspannen en genieten.
+							<br /><br />
+							Samen met onze gasten genieten we van de huiselijke sfeer en leggen wij iedereen in de watten.
+						</p>
+					</div>
+					<div class="col-2">
+						<img src="./images/placeholder.jpg" alt="" />
+					</div>
+				</div>
 			</div>
 		</section>
+
+		<section class="nieuwsbrief">
+			<div class="container">
+				<div class="row">
+					<div class="col-1 nieuwsbrief-column">
+						<h1>Nieuwsbrief</h1>
+						<p>Wil je je inschrijven voor onze nieuwsbrief? Vul dan hieronder je emailadres in.</p>
+						<form action="" class="nieuwsbrief-form">
+							<input type="email" placeholder="Vul hier je emailadres in." />
+							<br />
+							<input type="submit" value="Verzenden" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-3">
+						<h1 class="">Contact</h1>
+						<p>Hoogstraat 12,</p>
+						<p>2800 Mechelen</p>
+						<p>Tel: 0498 79 72 04</p>
+						<p>Email: info@j&k.be</p>
+					</div>
+					<div class="col-3 footer-image">
+						<img src="./images/logo/logo-transparent.png" alt="" />
+					</div>
+					<div class="col-3">
+						<h1>Extra info</h1>
+						<p>Voorwaarden</p>
+						<p>Privacy Statement</p>
+						<p>COVID-19 Regels</p>
+						<p>Garanties</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
 		<script src="javascript/menu.js"></script>
 		<script src="javascript/app.js"></script>
 	</body>

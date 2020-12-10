@@ -29,11 +29,13 @@
 html {
 	font-size: 10px;
 	overflow-x: hidden;
+	height: 100%;
 }
 
 body {
 	font-family: "Poppins", sans-serif, "Arial", sans-serif;
 	font-size: 1.6rem;
+	height: 100%;
 }
 
 h1,
@@ -44,6 +46,14 @@ h5,
 h6 {
 	font-family: "Marcellus", serif, "Arial", serif;
 	font-size: 4.2rem;
+	color: var(--goud);
+	margin: 0px 0px 25px 0px;
+}
+
+p {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-size: 1.8rem;
 }
 
 a {
@@ -55,6 +65,12 @@ ul {
 	list-style: none;
 }
 
+img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
 .container-full {
 	width: 100%;
 	padding: 0 2rem;
@@ -62,7 +78,8 @@ ul {
 }
 
 .container {
-	width: 80%;
+	max-width: 1080px;
+	width: 75%;
 	padding: 0 2rem;
 	margin: 0 auto;
 }
@@ -74,6 +91,41 @@ ul {
 	text-transform: uppercase;
 	padding: 1rem 1.5rem;
 	border: none;
+}
+
+/* Globale Flex/Grid Framework */
+/* Globale Flex/Grid Framework */
+/* Globale Flex/Grid Framework */
+
+.row {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 50px 0px;
+}
+
+.col-1 {
+	flex: 2 2 auto;
+	width: 95%;
+	min-width: 320px;
+	padding: 25px;
+}
+
+.col-2 {
+	flex: 2 2 auto;
+	width: 47.5%;
+	min-width: 320px;
+	padding: 25px;
+}
+
+.col-3 {
+	flex: 2 2 auto;
+	width: 31.66666%;
+	min-width: 280px;
+	padding: 25px;
 }
 
 /* Header Styling */
@@ -105,7 +157,8 @@ ul {
 		180deg,
 		rgba(36, 42, 54, 1) 0%,
 		rgba(36, 42, 54, 1) 30%,
-		rgba(36, 42, 54, 0.5970763305322129) 50%,
+		rgba(36, 42, 54, 1) 50%,
+		rgba(36, 42, 54, 0.5970763305322129) 70%,
 		rgba(36, 42, 54, 0) 100%
 	);
 }
@@ -195,6 +248,8 @@ ul {
 
 .header-content {
 	width: 100vw;
+	position: relative;
+	bottom: 15px;
 }
 
 .header-content video {
@@ -230,23 +285,25 @@ ul {
 	z-index: -1;
 }
 
-.main-heading {
+.header-text {
 	color: var(--wit);
 	line-height: 1;
 	text-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.5);
 }
 
-.title {
+.header-text .title {
 	font-family: "Poppins", sans-serif;
 	font-size: 4.8rem;
 	font-weight: 600;
+	color: var(--wit);
 	text-transform: uppercase;
 	margin: 0.5rem;
 }
 
-.subtitle {
+.header-text .subtitle {
 	font-size: 3.6rem;
 	font-weight: 300;
+	color: var(--wit);
 	margin: 0.5rem;
 	font-style: italic;
 }
@@ -295,7 +352,7 @@ ul {
 	align-items: center;
 }
 
-.kamer-boeken .form {
+.kamer-boeken .boeken-form {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -319,9 +376,101 @@ ul {
 	color: var(--blauw);
 }
 
+/* Nieuwsbrief */
+/* Nieuwsbrief */
+/* Nieuwsbrief */
+
+.nieuwsbrief {
+	width: 100vw;
+	background-color: var(--goud);
+	margin-top: 50px;
+	padding: 35px 0px;
+}
+
+.nieuwsbrief h1 {
+	color: var(--wit);
+	margin: 0px 0px 15px 0px;
+}
+.nieuwsbrief p {
+	color: var(--wit);
+	margin: 0px 0px 15px 0px;
+	text-align: center;
+}
+
+.nieuwsbrief-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.nieuwsbrief-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.nieuwsbrief-form input[type="email"] {
+	border: 1px solid var(--blauw);
+	color: grey;
+	height: 28px;
+	width: 220px;
+	text-align: center;
+}
+
+.nieuwsbrief-form input[type="submit"] {
+	border-radius: 8px;
+	border: none;
+	background-color: var(--blauw);
+	color: var(--wit);
+	text-align: center;
+	padding: 15px 30px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.nieuwsbrief-form input[type="submit"]:hover {
+	color: white;
+	background-color: #394255;
+}
+
 /* Footer */
 /* Footer */
 /* Footer */
+
+.footer {
+	background-color: var(--blauw);
+	width: 100vw;
+	padding: 35px 0px;
+}
+
+.footer .col-3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 20px 0px;
+}
+
+.footer-image img {
+	width: 120px;
+	opacity: 0.7;
+}
+
+.footer h1 {
+	font-family: "Poppins", sans-serif;
+	font-size: 3rem;
+	font-weight: bold;
+	color: var(--wit);
+}
+
+.footer p {
+	margin: 5px 0px;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.6rem;
+	color: var(--wit);
+}
 
 /* Media Queries */
 /* Media Queries */
