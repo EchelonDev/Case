@@ -110,14 +110,6 @@ ul {
 	);
 }
 
-/* Header Nav */
-/* Header Nav */
-/* Header Nav */
-
-/* DESKTOP MENU */
-/* DESKTOP MENU */
-/* DESKTOP MENU */
-
 /* MOBILE MENU */
 /* MOBILE MENU */
 /* MOBILE MENU */
@@ -200,6 +192,7 @@ ul {
 /* Hero in header styling */
 /* Hero in header styling */
 /* Hero in header styling */
+
 .header-content {
 	width: 100vw;
 }
@@ -269,7 +262,9 @@ ul {
 	background-color: var(--blauw);
 }
 
-/* Sectie boeken */
+/* Banner BOEKEN */
+/* Banner BOEKEN */
+/* Banner BOEKEN */
 
 .kamer-boeken {
 	height: 10vh;
@@ -324,7 +319,15 @@ ul {
 	color: var(--blauw);
 }
 
-/* Menu Media Query */
+/* Footer */
+/* Footer */
+/* Footer */
+
+/* Media Queries */
+/* Media Queries */
+/* Media Queries */
+
+/* Verwijder BOEKING-BANNER wanneer hij niet meer past */
 
 @media screen and (max-width: 1270px) {
 	.kamer-boeken {
@@ -343,6 +346,8 @@ ul {
 		height: 100vh;
 	}
 }
+
+/* Menu voor Desktop - CSS */
 
 @media screen and (min-width: 800px) {
 	.hamburger-menu {
