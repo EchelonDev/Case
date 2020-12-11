@@ -1,0 +1,180 @@
+/* Fieldsets */
+/* Fieldsets */
+/* Fieldsets */
+
+fieldset {
+	display: flex;
+	flex-wrap: wrap;
+	color: var(--goud);
+	font-weight: bold;
+	border: 1px solid var(--blauw);
+	margin: 25px 0px;
+}
+
+legend {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.voorwaarden {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Form groups */
+/* Form groups */
+/* Form groups */
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 8px 1%;
+	color: var(--blauw);
+	flex-basis: 31%;
+}
+
+.extra-info .form-group {
+	display: initial;
+	flex-direction: initial;
+	align-items: initial;
+	margin: 8px 0px;
+	color: var(--goud);
+	flex-basis: 100%;
+}
+
+.voorwaarden .form-group {
+	display: flex;
+	flex-direction: row;
+}
+
+/* Form-group vormgeving */
+/* Form-group vormgeving */
+/* Form-group vormgeving */
+
+.form-group label {
+	position: relative;
+	font-size: 14px;
+	font-weight: 600;
+	display: block;
+	top: 8px;
+	left: 8px;
+	padding: 0px 5px;
+	background-color: var(--wit);
+	color: var(--blauw);
+}
+
+.voorwaarden .form-group label {
+	font-size: 14px;
+	font-weight: 600;
+	position: initial;
+	display: block;
+	padding: 0px 5px;
+	background-color: var(--wit);
+	color: var(--blauw);
+}
+
+.extra-info .form-group label {
+	font-size: 14px;
+	font-weight: 600;
+	position: initial;
+	display: block;
+	padding: 0px 5px;
+	margin: 0 5px;
+	background-color: var(--wit);
+}
+
+/* Form-group input types vormgeving */
+/* Form-group input types vormgeving */
+/* Form-group input types vormgeving */
+
+.form-group input[type="text"] {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	width: 85%;
+	min-width: 240px;
+	padding: 0px 20px;
+	border: 1px solid var(--blauw);
+	background-color: var(--wit);
+	color: var(--blauw);
+	height: 45px;
+}
+
+.form-group input[type="date"] {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	width: 85%;
+	min-width: 240px;
+	padding: 0px 20px;
+	border: 1px solid var(--blauw);
+	background-color: var(--wit);
+	color: var(--blauw);
+	height: 45px;
+}
+
+.form-group select {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	width: 85%;
+	min-width: 280px;
+	padding: 0px 20px;
+	border: 1px solid var(--blauw);
+	background-color: var(--wit);
+	color: var(--blauw);
+	height: 45px;
+}
+
+.extra-info .textarea {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	width: 90%;
+	max-width: 1050px;
+	height: 150px;
+	min-width: 240px;
+	margin: 0px 10px;
+	padding: 0px 20px;
+	border: 1px solid var(--blauw);
+	background-color: var(--wit);
+	color: var(--blauw);
+}
+
+.voorwaarden .form-group input[type="checkbox"] {
+	position: relative;
+	top: 1px;
+}
+
+.voorwaarden .form-group input[type="button"] {
+	font-family: "Poppins", sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: var(--blauw);
+	color: #fbfbfb;
+	cursor: pointer;
+	border: none;
+	padding: 15px 30px;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.voorwaarden .form-group input[type="button"]:hover {
+	background-color: var(--goud);
+	color: var(--wit);
+}
+
+/* ERROR */
+/* ERROR */
+/* ERROR */
+
+.error {
+	color: red;
+}
+
+/* Media query */
+/* Media query */
+/* Media query */
+
+@media screen and (max-width: 818px) {
+	fieldset {
+		justify-content: center;
+	}
+}
