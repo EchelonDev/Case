@@ -1,3 +1,28 @@
+/* button-indexmain-kamer */
+.button-kijk, 
+.button-boeken-blue {
+    background-color: var(--blauw);
+    border-radius: 5px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.button-kijk:hover,
+.button-boeken-blue:hover {
+	color: var(--wit);
+	background-color: #394255;
+}
+.button-boeken-gold {
+    background-color: var(--goud);
+    border-radius: 5px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.button-boeken-gold:hover {
+    color: var(--wit);
+	background-color: #394255;
+}
+
+
 /* indexpagina main welkom */
 /* indexpagina main welkom */
 /* indexpagina main welkom */
@@ -13,7 +38,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 150px;
 }
 .titel-room {
     text-align: center;
@@ -32,16 +56,7 @@
     margin-bottom: 40px;
     box-shadow: 5px 10px 18px #888888;
 }
-.button-kijk {
-    background-color: var(--blauw);
-    border-radius: 5px;
-    text-transform: capitalize;
-    margin-bottom: 40px;
-}
-.button-kijk:hover {
-	color: var(--wit);
-	background-color: #394255;
-}
+
 /* kamerpagina 2-persoonskamer */
 /* kamerpagina 2-persoonskamer */
 /* kamerpagina 2-persoonskamer */
@@ -55,6 +70,7 @@
 .room-by-room-background-blue {    
     background-color:var(--blauw); 
     padding: 20px 0;
+    color: var(--wit);
 }
 .room-by-room-background-white {
     background-color: var(--wit);
