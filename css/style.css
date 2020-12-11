@@ -1,0 +1,26 @@
+.different-rooms{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.different-rooms h3 {
+    color: var(--blauw);
+	font-family: "Poppins", sans-serif;
+	font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;   
+}
+.different-rooms-column .images-different-rooms {
+    margin-bottom: 40px;
+}
+.different-rooms .button-kijk {
+    background-color: var(--blauw);
+    border-radius: 5px;
+    text-transform: lowercase;
+    margin-bottom: 40px;
+}
+
+.button-kijk:hover {
+	background-color: var(--blauw);
+}
