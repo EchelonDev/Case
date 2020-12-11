@@ -1,8 +1,25 @@
+/* indexpagina main welkom */
+/* indexpagina main welkom */
+/* indexpagina main welkom */
+.main-content-column p {
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+/* indexpagina main kamers */
+/* indexpagina main kamers */
+/* indexpagina main kamers */
 .different-rooms{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
+}
+.titel-room {
+    text-align: center;
+}
+.different-rooms-column{
+    text-align: center;
 }
 .different-rooms h3 {
     color: var(--blauw);
@@ -11,16 +28,50 @@
     margin-bottom: 10px;
     text-align: center;   
 }
-.different-rooms-column .images-different-rooms {
+.images-different-rooms {
     margin-bottom: 40px;
+    box-shadow: 5px 10px 18px #888888;
 }
-.different-rooms .button-kijk {
+.button-kijk {
     background-color: var(--blauw);
     border-radius: 5px;
-    text-transform: lowercase;
+    text-transform: capitalize;
     margin-bottom: 40px;
 }
-
 .button-kijk:hover {
-	background-color: var(--blauw);
+	color: var(--wit);
+	background-color: #394255;
 }
+/* kamerpagina 2-persoonskamer */
+/* kamerpagina 2-persoonskamer */
+/* kamerpagina 2-persoonskamer */
+
+.room-by-room-background-blue, .room-by-room-background-white {
+    max-width: 1080px;
+	width: 75%;
+	padding: 0 2rem;
+    margin: 0 auto;
+}
+.room-by-room-background-blue {    
+    background-color:var(--blauw); 
+    padding: 20px 0;
+}
+.room-by-room-background-white {
+    background-color: var(--wit);
+    padding: 20px 0;
+}
+.room-by-room h1{
+    text-align: center;
+}
+.room-by-room-tweepersoonskamer p {
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+.room-by-room-tweepersoonskamer li {
+    line-height: 1.6;
+}
+.room-by-room h2 {
+    font-size: 2.5rem;
+    padding-left: 25px;
+}
+
