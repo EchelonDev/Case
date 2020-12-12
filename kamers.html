@@ -22,6 +22,8 @@
 			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
 			crossorigin="anonymous"
 		/>
+		<!-- Image Slider Splide -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
 		<!-- Recurring Styles -->
 		<link rel="stylesheet" href="css/main.css" />
 		<!-- Other Styling -->
@@ -87,161 +89,170 @@
 		<!-- Alles hierboven laten staan -->
 		<!-- Alles hierboven laten staan -->
 
-		<section class="rooms-white" id="hoofdinhoud">
-			<div class="room-by-room-background-white">
-				<div class="container room-by-room">
+		<section class="tweepersoonskamer">
+			<div class="container kamer-1">
+				<div class="heading">
 					<h1>2-Persoonskamer</h1>
-					<div class="row">
-						<div class="col-2">
-							<img src="./images/placeholder.jpg" alt="" />
+				</div>
+				<div class="row">
+					<div class="col-1">
+						<div id="image-slider1" class="splide">
+							<div class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<img src="images/hotelkamer-1.jpg" alt="Hotelkamer 2-Persoons" />
+									</li>
+									<li class="splide__slide">
+										<img src="images/hotelkamer-1.jpg" alt="Hotelkamer 2-Persoons" />
+									</li>
+									<li class="splide__slide">
+										<img src="images/hotelkamer-1.jpg" alt="Hotelkamer 2-Persoons" />
+									</li>
+								</ul>
+							</div>
 						</div>
-						<div class="col-2 room-by-room-tweepersoonskamer">
-							<p>Met zijn comfortabele interieur en mooie decoratie, is dit de plek waar u zich echt thuis voelt.</p>
-							<p>Uw overnachting is inclusief:</p>
-							<ul>
-								<li>Ontbijt</li>
-								<li>HD-flatscreen tv</li>
-								<li>Gratis wifi</li>
-								<li>Koffietoestel</li>
-								<li>Airconditioning</li>
-								<li>Bureau</li>
-								<li>Safe</li>
-								<li>Koelkast</li>
-							</ul>
-						</div>
+						<!-- <img src="images/hotelkamer-1.jpg" alt="Hotelkamer 2-Persoons" /> -->
 					</div>
 				</div>
-				<div class="container room-by-room">
-					<h2>Badkamer</h2>
-					<div class="row">
-						<div class="col-2 room-by-room-tweepersoonskamer">
-							<p>
-								De kamer is licht en van alle luxe voorzien. Een comfortabele zithoek en balkon met een fantastisch
-								uitzicht.
-							</p>
-							<p>Uw overnachting is inclusief</p>
-							<ul>
-								<li>Ligbad</li>
-								<li>Douche</li>
-								<li>Toilet</li>
-								<li>Föhn</li>
-								<li>Make-up spiegel</li>
-								<li>Dubbele lavabo</li>
-							</ul>
-							<a href="#kamer" class="button button-boeken-blue">Boeken</a>
-						</div>
-
-						<div class="col-2">
-							<img src="./images/placeholder.jpg" alt="" />
-						</div>
+				<div class="row">
+					<div class="col-2">
+						<h4>Over deze kamer...</h4>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque mollitia odit iste explicabo sapiente
+							quaerat quae maxime incidunt labore nesciunt.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque mollitia odit iste explicabo sapiente
+							quaerat quae maxime incidunt labore nesciunt.
+						</p>
+					</div>
+					<div class="col-2">
+						<h4>Voorzieningen</h4>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque mollitia odit iste explicabo sapiente
+							quaerat quae maxime incidunt labore nesciunt.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque mollitia odit iste explicabo sapiente
+							quaerat quae maxime incidunt labore nesciunt.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1">
+						<a class="kamer-boeken-button" href="kamer-boeken.html">Boeken</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="rooms-blue" id="hoofdinhoud">
-			<div class="room-by-room-background-blue">
-				<div class="container room-by-room">
+		<section class="luxekamer">
+			<div class="container kamer-2">
+				<div class="heading">
 					<h1>Luxekamer</h1>
-					<div class="row">
-						<div class="col-2 room-by-room-tweepersoonskamer">
-							<p>Met zijn comfortabele interieur en mooie decoratie, is dit de plek waar u zich echt thuis voelt.</p>
-							<p>Uw overnachting is inclusief:</p>
-							<ul>
-								<li>Ontbijt</li>
-								<li>HD-flatscreen tv</li>
-								<li>Gratis wifi</li>
-								<li>Koffietoestel</li>
-								<li>Airconditioning</li>
-								<li>Bureau</li>
-								<li>Safe</li>
-								<li>Koelkast</li>
-							</ul>
-						</div>
-						<div class="col-2">
-							<img src="./images/placeholder.jpg" alt="" />
+				</div>
+				<div class="row">
+					<div class="col-1">
+						<div id="image-slider2" class="splide">
+							<div class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<img src="images/hotelkamer-1.jpg" alt="Hotelkamer 2-Persoons" />
+									</li>
+									<li class="splide__slide">
+										<img src="images/hotelkamer-1.jpg" alt="Hotelkamer 2-Persoons" />
+									</li>
+									<li class="splide__slide">
+										<img src="images/hotelkamer-1.jpg" alt="Hotelkamer 2-Persoons" />
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="container room-by-room">
-					<h2>Badkamer</h2>
-					<div class="row">
-						<div class="col-2">
-							<img src="./images/placeholder.jpg" alt="" />
-						</div>
-						<div class="col-2 room-by-room-tweepersoonskamer">
-							<p>Na de ruime kamer beschikt deze ook over een geweldige badkamer</p>
-							<p>
-								Onze luxe badkamer is namelijk het perfecte ingrediënten om even te genieten van rust en ontspanning.
-							</p>
-							<p>Deze beschikt ook over:</p>
-							<ul>
-								<li>Ligbad</li>
-								<li>Douche</li>
-								<li>Toilet</li>
-								<li>Föhn</li>
-								<li>Make-up spiegel</li>
-								<li>Dubbele lavabo</li>
-							</ul>
-							<a href="#kamer" class="button button-boeken-gold">Boeken</a>
-						</div>
+				<div class="row">
+					<div class="col-2">
+						<h4>Over deze kamer...</h4>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque mollitia odit iste explicabo sapiente
+							quaerat quae maxime incidunt labore nesciunt.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque mollitia odit iste explicabo sapiente
+							quaerat quae maxime incidunt labore nesciunt.
+						</p>
+					</div>
+					<div class="col-2">
+						<h4>Voorzieningen</h4>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque mollitia odit iste explicabo sapiente
+							quaerat quae maxime incidunt labore nesciunt.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque mollitia odit iste explicabo sapiente
+							quaerat quae maxime incidunt labore nesciunt.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1">
+						<a class="kamer-boeken-button" href="kamer-boeken.html">Boeken</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="rooms-white" id="hoofdinhoud">
-			<div class="room-by-room-background-white">
-				<div class="container room-by-room">
-					<h1>Familiekamer</h1>
-					<div class="row">
-						<div class="col-2">
-							<img src="./images/placeholder.jpg" alt="" />
-						</div>
-						<div class="col-2 room-by-room-tweepersoonskamer">
-							<p>
-								De familiekamers zijn speciaal voorzien om de ouders en kinderen een fantastisch verblijf te garanderen.
-								De hotelkamer is ongeveer 70 m² groot en heeft een boeiend uitzicht op het platteland met veel weiden.
-								Het beschikt over 3 slaapkamers en een zitruimte.
-							</p>
-							<p>Uw overnachting is inclusief</p>
-							<ul>
-								<li>Ontbijt</li>
-								<li>HD-flatscreen tv</li>
-								<li>Gratis wifi</li>
-								<li>Koffietoestel</li>
-								<li>Airconditioning</li>
-								<li>Bureau</li>
-								<li>Safe</li>
-								<li>Koelkast</li>
-							</ul>
+		<section class="familiekamer">
+			<div class="container kamer-3">
+				<div class="heading">
+					<h1>Familiekamer (6 pers)</h1>
+				</div>
+				<div class="row">
+					<div class="col-1">
+						<div id="image-slider3" class="splide">
+							<div class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<img src="images/hotelkamer-1.jpg" alt="Hotelkamer 2-Persoons" />
+									</li>
+									<li class="splide__slide">
+										<img src="images/hotelkamer-1.jpg" alt="Hotelkamer 2-Persoons" />
+									</li>
+									<li class="splide__slide">
+										<img src="images/hotelkamer-1.jpg" alt="Hotelkamer 2-Persoons" />
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="container room-by-room">
-					<h2>Badkamer</h2>
-					<div class="row">
-						<div class="col-2 room-by-room-tweepersoonskamer">
-							<p>Na de ruime kamer beschikt deze ook over een ruime badkamer</p>
-							<p>
-								Onze luxe badkamer is namelijk het perfecte ingrediënten om even te genieten van rust en ontspanning en
-								dit met de ganse familie.
-							</p>
-							<p>Deze beschikt ook over</p>
-							<ul>
-								<li>Ligbad</li>
-								<li>Douche</li>
-								<li>Toilet</li>
-								<li>Föhn</li>
-								<li>Make-up spiegel</li>
-								<li>Dubbele lavabo</li>
-							</ul>
-							<a href="#kamer" class="button button-boeken-blue">Boeken</a>
-						</div>
-
-						<div class="col-2 middengrootte">
-							<img src="./images/placeholder.jpg" alt="" />
-						</div>
+				<div class="row">
+					<div class="col-2">
+						<h4>Over deze kamer...</h4>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque mollitia odit iste explicabo sapiente
+							quaerat quae maxime incidunt labore nesciunt.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque mollitia odit iste explicabo sapiente
+							quaerat quae maxime incidunt labore nesciunt.
+						</p>
+					</div>
+					<div class="col-2">
+						<h4>Voorzieningen</h4>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque mollitia odit iste explicabo sapiente
+							quaerat quae maxime incidunt labore nesciunt.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque mollitia odit iste explicabo sapiente
+							quaerat quae maxime incidunt labore nesciunt.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1">
+						<a class="kamer-boeken-button" href="kamer-boeken.html">Boeken</a>
 					</div>
 				</div>
 			</div>
@@ -257,11 +268,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-1 nieuwsbrief-column">
-						<h1>Nieuwsbrief</h1>
+						<h2>Nieuwsbrief</h2>
 
 						<p>Wil je je inschrijven voor onze nieuwsbrief? Vul dan hieronder je emailadres in.</p>
 
-						<form action="" class="nieuwsbrief-form">
+						<form action="#" class="nieuwsbrief-form">
 							<input type="email" placeholder="Vul hier je emailadres in." />
 							<br />
 							<input type="submit" value="Verzenden" />
@@ -275,7 +286,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-3">
-						<h1 class="">Contact</h1>
+						<h2>Contact</h2>
 						<p>Hoogstraat 12,</p>
 						<p>2800 Mechelen</p>
 						<p>Tel: 0498 79 72 04</p>
@@ -285,7 +296,7 @@
 						<img src="./images/logo/logo-transparent.png" alt="" />
 					</div>
 					<div class="col-3">
-						<h1>Extra info</h1>
+						<h2>Extra info</h2>
 						<p>Voorwaarden</p>
 						<p>Privacy Statement</p>
 						<p>COVID-19 Regels</p>
@@ -296,6 +307,7 @@
 		</footer>
 
 		<script src="javascript/menu.js"></script>
-		<script src="javascript/app.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+		<script src="javascript/imageSliders.js"></script>
 	</body>
 </html>

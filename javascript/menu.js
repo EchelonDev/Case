@@ -1,3 +1,5 @@
+"use strict";
+
 let header = document.querySelector(".header-nav");
 
 let hamburgerMenu = document.querySelector(".hamburger-menu");
