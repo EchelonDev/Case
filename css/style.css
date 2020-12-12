@@ -6,6 +6,7 @@
 	--blauw: #242a36;
 	--lichtblauw: #3d465a;
 	--goud: #bda76e;
+	--lichtgoud: #f5e3b5;
 	--wit: #fbfbfb;
 }
 
@@ -53,7 +54,7 @@
 	position: relative;
 	margin: -1.5rem 0rem;
 	height: 400px;
-	background: url(../images/bg.jpg);
+	background: url(../images/background.jpg);
 	background-size: cover;
 	background-position: center;
 	z-index: 0;
@@ -129,6 +130,7 @@
 .luxekamer {
 	padding: 50px 0px;
 	background-color: var(--blauw);
+	color: white;
 }
 
 .familiekamer {
@@ -136,17 +138,41 @@
 	background-color: var(--wit);
 }
 
+.button-center {
+	display: flex;
+	justify-content: center;
+}
+
 .kamer-boeken-button {
 	border: none;
 	background-color: var(--blauw);
 	color: var(--wit);
 	border-radius: 5px;
-	text-align: center;
-	width: 100%;
-	margin-top: 20px;
-	padding: 15px 30px;
+	padding: 15px 45px;
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
+}
+
+.kamer-boeken-button:hover {
+	background-color: var(--lichtblauw);
+}
+
+.luxekamer .kamer-boeken-button {
+	background-color: var(--goud);
+	color: var(--wit);
+}
+
+.luxekamer .kamer-boeken-button:hover {
+	background-color: var(--lichtgoud);
+	color: var(--wit);
+}
+
+.luxekamer .heading:after {
+	border-bottom: 2px solid rgba(240, 240, 240, 0.3);
+}
+
+.luxekamer ul li {
+	color: rgb(192, 192, 192);
 }
 
 /* Styling 2 Persoonskamer */
@@ -170,6 +196,75 @@
 
 .kamer-3 h4 {
 	font-family: "Poppins", sans-serif;
+}
+
+/* Slider Styling */
+
+.splide__slide {
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 550px;
+}
+
+.splide__slide img {
+	height: 480px;
+	transition: height 0.5s ease;
+}
+
+.splide__slide.is-active {
+	height: 550px;
+}
+
+.splide__slide.is-active img {
+	height: 550px;
+}
+
+@media screen and (max-width: 1080px) {
+	.splide__slide {
+		height: 400px;
+	}
+
+	.splide__slide img {
+		height: 350px;
+	}
+
+	.splide__slide.is-active {
+		height: 400px;
+	}
+
+	.splide__slide.is-active img {
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.splide__slide {
+		height: 350px;
+	}
+
+	.splide__slide img {
+		height: 350px;
+	}
+
+	.splide__slide.is-active {
+		height: 350px;
+	}
+
+	.splide__slide.is-active img {
+		height: 350px;
+	}
+}
+
+/* ------------ */
+/* ------------ */
+/* boeken */
+/* ------------ */
+/* ------------ */
+
+.boeking h1 {
+	color: var(--blauw);
 }
 
 /* ------------ */
