@@ -164,7 +164,7 @@ legend {
 	font-family: "Poppins", sans-serif;
 	font-size: 16px;
 	width: 100%;
-	min-width: 280px;
+	min-width: 240px;
 	padding: 0px 20px;
 	border: 1px solid var(--blauw);
 	background-color: var(--wit);
@@ -176,9 +176,9 @@ legend {
 	font-family: "Poppins", sans-serif;
 	font-size: 16px;
 	width: 95%;
-	max-width: 1050px;
+	max-width: 900px;
+	min-width: 220px;
 	height: 150px;
-	min-width: 240px;
 	margin: 0px 10px;
 	padding: 10px 10px;
 	border: 1px solid var(--blauw);
