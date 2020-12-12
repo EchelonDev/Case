@@ -6,13 +6,9 @@
 		<meta name="author" content="Champagne Jim & Katrien Colson" />
 		<meta name="keywords" content="hotel, website, boeken, feestzaal, verblijf" />
 		<meta name="description" content="Kamers - Hotel J&K" />
-		<!-- Font-awesome Icons CSS -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-			integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-			crossorigin="anonymous"
-		/>
+		<!-- Ion Icons JS Preload -->
+		<script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
 		<!-- Reset CSS -->
 		<link
 			rel="stylesheet"
@@ -44,8 +40,8 @@
 						<img src="images/logo/logo-transparent.png" alt="" />
 					</a>
 					<div class="hamburger-menu">
-						<i class="fas fa-bars"></i>
-						<i class="fas fa-times"></i>
+						<ion-icon class="menu-icon" name="menu"></ion-icon>
+						<ion-icon class="menu-close-icon" name="close"></ion-icon>
 					</div>
 					<ul class="nav-list">
 						<li class="nav-item">
@@ -83,7 +79,6 @@
 				<div class="row">
 					<div class="col-1">
 						<h1>BoekingsFormulier</h1>
-
 						<form id="formulier">
 							<fieldset class="personal-data">
 								<legend>Persoonlijke gegevens</legend>
@@ -182,6 +177,7 @@
 										>Zijn er nog vragen waar je graag een antwoord op wilt hebben. Stel ze dan in het veld
 										hieronder!</label
 									>
+									<br />
 									<textarea class="textarea" id="extraInfo"></textarea>
 									<span class="error" id="extraInfo_error"></span>
 								</div>
@@ -197,7 +193,7 @@
 									<span class="error" id="voorwaardenAkkoord_error"></span>
 								</div>
 								<div class="form-group">
-									<input type="button" value="Verstuur" id="knop_verstuur" onclick="verstuur()" />
+									<input type="button" value="Verstuur" id="knop_verstuur" onclick="verstuur_boeking()" />
 								</div>
 							</fieldset>
 						</form>
@@ -256,6 +252,6 @@
 
 		<script src="javascript/menu.js"></script>
 		<script src="javascript/app.js"></script>
-		<script src="javascript/boeken-validatie.js"></script>
+		<script src="javascript/formulier-validatie.js"></script>
 	</body>
 </html>

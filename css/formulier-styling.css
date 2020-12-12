@@ -1,3 +1,40 @@
+:root {
+	--blauw: #242a36;
+	--goud: #bda76e;
+	--wit: #ffffff;
+}
+
+/* Stijlen van auto-fill wegfilteren */
+/* Stijlen van auto-fill wegfilteren */
+/* Stijlen van auto-fill wegfilteren */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+	border: 1px solid var(--blauw);
+	-webkit-text-fill-color: var(--blauw);
+	-webkit-box-shadow: 0 0 0px 1000px rgb(255, 255, 255) inset;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	border: 1px solid var(--blauw);
+	-webkit-text-fill-color: var(--blauw);
+	-webkit-box-shadow: 0 0 0px 1000px rgb(255, 255, 255) inset;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+	border: 1px solid var(--blauw);
+	-webkit-text-fill-color: var(--blauw);
+	-webkit-box-shadow: 0 0 0px 1000px rgb(255, 255, 255) inset;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
 /* Fieldsets */
 /* Fieldsets */
 /* Fieldsets */
@@ -9,6 +46,15 @@ fieldset {
 	font-weight: bold;
 	border: 1px solid var(--blauw);
 	margin: 25px 0px;
+}
+
+.form-group-col {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 8px 1%;
+	color: var(--blauw);
+	flex-basis: 48%;
 }
 
 legend {
@@ -34,6 +80,15 @@ legend {
 	flex-basis: 31%;
 }
 
+.form-group.alt-form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 8px 1%;
+	color: var(--blauw);
+	flex-basis: 100%;
+}
+
 .extra-info .form-group {
 	display: initial;
 	flex-direction: initial;
@@ -48,9 +103,9 @@ legend {
 	flex-direction: row;
 }
 
-/* Form-group vormgeving */
-/* Form-group vormgeving */
-/* Form-group vormgeving */
+/* Form-group labels vormgeving */
+/* Form-group labels vormgeving */
+/* Form-group labels vormgeving */
 
 .form-group label {
 	position: relative;
@@ -91,7 +146,7 @@ legend {
 .form-group input[type="text"] {
 	font-family: "Poppins", sans-serif;
 	font-size: 16px;
-	width: 85%;
+	width: 100%;
 	min-width: 240px;
 	padding: 0px 20px;
 	border: 1px solid var(--blauw);
@@ -132,7 +187,7 @@ legend {
 	height: 150px;
 	min-width: 240px;
 	margin: 0px 10px;
-	padding: 0px 20px;
+	padding: 10px 10px;
 	border: 1px solid var(--blauw);
 	background-color: var(--wit);
 	color: var(--blauw);

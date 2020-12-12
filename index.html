@@ -6,13 +6,9 @@
 		<meta name="author" content="Champagne Jim & Katrien Colson" />
 		<meta name="keywords" content="hotel, website, boeken, feestzaal, verblijf" />
 		<meta name="description" content="Homepage Hotel J&K" />
-		<!-- Font-awesome Icons CSS -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-			integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-			crossorigin="anonymous"
-		/>
+		<!-- Ion Icons JS Preload -->
+		<script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
 		<!-- Reset CSS -->
 		<link
 			rel="stylesheet"
@@ -42,8 +38,8 @@
 						<img src="images/logo/logo-transparent.png" alt="" />
 					</a>
 					<div class="hamburger-menu">
-						<i class="fas fa-bars"></i>
-						<i class="fas fa-times"></i>
+						<ion-icon class="menu-icon" name="menu"></ion-icon>
+						<ion-icon class="menu-close-icon" name="close"></ion-icon>
 					</div>
 					<ul class="nav-list">
 						<li class="nav-item">
@@ -76,7 +72,7 @@
 					</div>
 					<br />
 					<br />
-					<a href="#hoofdinhoud" class="button button-hero">Neem een kijkje</a>
+					<a href="#welkomAnchor" class="button button-hero">Neem een kijkje</a>
 				</div>
 			</div>
 			<!-- Alles hierboven laten staan -->
@@ -103,69 +99,52 @@
 			</section>
 		</header>
 
-		<section class="main-content" id="hoofdinhoud">
+		<section class="welkom" id="welkomAnchor">
 			<div class="container">
 				<div class="row">
-					<div class="col-2 main-content-column">
-						<h1>Welkom</h1>
+					<div class="col-1 welkom-container">
+						<h1 class="welkom-titel">Welkom</h1>
 						<p>
-							Welkom in ons kleinschalig, sfeervolle, warm hotel. Dit uniek plekje is voor jong en oud, zowel zakelijk
-							als privé.
+							Welkom in ons kleinschalig, sfeervol, warm hotel. Dit uniek plekje is voor jong en oud, zowel zakelijk als
+							privé
 						</p>
 						<p>
-							Ons hotel is gelegen te … en wij beschikken over 3 zeer mooie kamers met moderne faciliteiten. Een ideale
-							plaats om te onthaasten, ontspannen en genieten.
+							Ons hotel is gelegen te Mechelen en wij beschikken over 3 zeer mooie kamers met moderne faciliteiten. Een
+							ideale plaats om te onthaasten, ontspannen en genieten.
 						</p>
-						<p>Samen met onze gasten genieten we van de huiselijke sfeer en leggen wij iedereen in de watten.</p>
-					</div>
-					<div class="col-2">
-						<img src="./images/placeholder.jpg" alt="" />
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-2">
-						<img src="./images/placeholder.jpg" alt="" />
-					</div>
-					<div class="col-2 main-content-column">
-						<h1>Hoofdinhoud</h1>
+						<p>Samen met onze gasten genieten we van de huiselijke sfeer en leggen wij iedereen in de watten</p>
 						<p>
-							Welkom in ons kleinschalig, sfeervolle, warm hotel. Dit uniek plekje is voor jong en oud, zowel zakelijk
-							als privé.
+							Welkom in ons kleinschalig, sfeervol, warm hotel.
+							<br />
+							Dit uniek plekje is voor jong en oud, zowel zakelijk als privé
 						</p>
-						<p>
-							Ons hotel is gelegen te … en wij beschikken over 3 zeer mooie kamers met moderne faciliteiten. Een ideale
-							plaats om te onthaasten, ontspannen en genieten.
-						</p>
-						<p>Samen met onze gasten genieten we van de huiselijke sfeer en leggen wij iedereen in de watten.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="different-rooms">
-			<div class="container">
-				<h1 class="titel-room">Kamers</h1>
-				<div class="row">
-					<div class="col-3 different-rooms-column">
-						<h3>2-persoonskamer</h3>
-						<img src="./images/hotelkamer-3.jpg" class="images-different-rooms" alt="2-persoonskamer" />
-						<br /><br />
-						<a href="#kamer" class="button button-kijk">Kamer bekijken</a>
-					</div>
+		<section class="content-banner"></section>
 
-					<div class="col-3 different-rooms-column">
-						<h3>Luxekamer</h3>
-						<img src="./images/hotelkamer-4.jpg" class="images-different-rooms" alt="luxekamer" />
-						<br /><br />
-						<a href="#kamer" class="button button-kijk">Kamer bekijken</a>
+		<section class="kamers">
+			<div class="container">
+				<div class="row">
+					<div class="heading">
+						<h1>Kamers</h1>
 					</div>
-					<div class="col-3 different-rooms-column">
-						<h3>Familiekamer</h3>
-						<img src="./images/hotelkamer-6.jpg" class="images-different-rooms" alt="familiekamer" />
-						<br /><br />
-						<a href="#kamer" class="button button-kijk">Kamer bekijken</a>
+					<div class="col-3 kamer-container">
+						<h1 class="kamer-titel">2-Persoonskamer</h1>
+						<img src="images/hotelkamer-1.jpg" alt="" />
+						<a class="boeken-button" href="kamer-boeken.html">Boeken</a>
+					</div>
+					<div class="col-3 kamer-container">
+						<h1 class="kamer-titel">2-Persoonskamer</h1>
+						<img src="images/hotelkamer-2.jpg" alt="" />
+						<a class="boeken-button" href="kamer-boeken.html">Boeken</a>
+					</div>
+					<div class="col-3 kamer-container">
+						<h1 class="kamer-titel">2-Persoonskamer</h1>
+						<img src="images/hotelkamer-3.jpg" alt="" />
+						<a class="boeken-button" href="kamer-boeken.html">Boeken</a>
 					</div>
 				</div>
 			</div>
@@ -219,5 +198,7 @@
 
 		<script src="javascript/menu.js"></script>
 		<script src="javascript/app.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="javascript/smoothscroll.js"></script>
 	</body>
 </html>

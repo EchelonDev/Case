@@ -5,14 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="author" content="Champagne Jim & Katrien Colson" />
 		<meta name="keywords" content="hotel, website, boeken, feestzaal, verblijf" />
-		<meta name="description" content="Vergaderzaal - Hotel J&K" />
-		<!-- Font-awesome Icons CSS -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-			integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-			crossorigin="anonymous"
-		/>
+		<meta name="description" content="Kamers - Hotel J&K" />
+		<!-- Ion Icons JS Preload -->
+		<script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
 		<!-- Reset CSS -->
 		<link
 			rel="stylesheet"
@@ -31,8 +27,10 @@
 		<link rel="stylesheet" href="css/main.css" />
 		<!-- Other Styling -->
 		<link rel="stylesheet" href="css/style.css" />
+		<!-- Formulier Styling -->
+		<link rel="stylesheet" href="css/formulier-styling.css" />
 
-		<title>Vergarderzaal - J&K Hotel</title>
+		<title>Contact - J&K Hotel</title>
 	</head>
 	<body>
 		<header class="header-nav">
@@ -42,8 +40,8 @@
 						<img src="images/logo/logo-transparent.png" alt="" />
 					</a>
 					<div class="hamburger-menu">
-						<i class="fas fa-bars"></i>
-						<i class="fas fa-times"></i>
+						<ion-icon class="menu-icon" name="menu"></ion-icon>
+						<ion-icon class="menu-close-icon" name="close"></ion-icon>
 					</div>
 					<ul class="nav-list">
 						<li class="nav-item">
@@ -76,42 +74,86 @@
 		<!-- Alles hierboven laten staan -->
 		<!-- Alles hierboven laten staan -->
 
-		<section class="main-content" id="hoofdinhoud">
+		<section class="boeking">
 			<div class="container">
 				<div class="row">
-					<div class="col-2">
-						<h1>Hoofdinhoud</h1>
-						<p>
-							Welkom in ons kleinschalig, sfeervolle, warm hotel. Dit uniek plekje is voor jong en oud, zowel zakelijk
-							als privé.
-						</p>
-						<p>
-							Ons hotel is gelegen te … en wij beschikken over 3 zeer mooie kamers met moderne faciliteiten. Een ideale
-							plaats om te onthaasten, ontspannen en genieten.
-						</p>
-						<p>Samen met onze gasten genieten we van de huiselijke sfeer en leggen wij iedereen in de watten.</p>
+					<div class="heading">
+						<h1>Contact</h1>
 					</div>
 					<div class="col-2">
-						<img src="./images/placeholder.jpg" alt="" />
+						<form id="formulier">
+							<fieldset class="personal-data">
+								<legend>Persoonlijke informatie</legend>
+								<div class="form-group alt-form">
+									<label for="voornaam">Voornaam *</label>
+									<input type="text" id="voornaam" />
+									<span class="error" id="voornaam_error"></span>
+								</div>
+								<div class="form-group alt-form">
+									<label for="achternaam">Achternaam *</label>
+									<input type="text" id="achternaam" />
+									<span class="error" id="achternaam_error"> </span>
+								</div>
+								<div class="form-group alt-form">
+									<label for="telefoon">Tel/GSM Nr *</label>
+									<input type="text" id="telefoon" />
+									<span class="error" id="telefoon_error"></span>
+								</div>
+								<div class="form-group alt-form">
+									<label for="email">Email *</label>
+									<input type="text" id="email" />
+									<span class="error" id="email_error"></span>
+								</div>
+							</fieldset>
+
+							<fieldset class="extra-info">
+								<legend>Extra info</legend>
+								<div class="form-group">
+									<label for="extraInfo"
+										>Zijn er nog vragen waar je graag een antwoord op wilt hebben. Stel ze dan in het veld
+										hieronder!</label
+									>
+									<br />
+									<textarea class="textarea" id="extraInfo"></textarea>
+									<span class="error" id="extraInfo_error"></span>
+								</div>
+							</fieldset>
+
+							<fieldset class="voorwaarden">
+								<legend>Algemene voorwaarden</legend>
+								<div class="form-group">
+									<input type="checkbox" id="voorwaardenAkkoord" />
+									<label for="voorwaardenAkkoord"
+										>U heeft onze voorwaarden gelezen en gaat akkoord met onze privacyvoorwaarden.*</label
+									>
+									<span class="error" id="voorwaardenAkkoord_error"></span>
+								</div>
+								<div class="form-group">
+									<input type="button" value="Verstuur" id="knop_verstuur" onclick="verstuur_contact()" />
+								</div>
+							</fieldset>
+						</form>
 					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-2">
-						<img src="./images/placeholder.jpg" alt="" />
-					</div>
-					<div class="col-2">
-						<h1>Hoofdinhoud</h1>
-						<p>
-							Welkom in ons kleinschalig, sfeervolle, warm hotel. Dit uniek plekje is voor jong en oud, zowel zakelijk
-							als privé.
-							<br /><br />
-							Ons hotel is gelegen te … en wij beschikken over 3 zeer mooie kamers met moderne faciliteiten. Een ideale
-							plaats om te onthaasten, ontspannen en genieten.
-							<br /><br />
-							Samen met onze gasten genieten we van de huiselijke sfeer en leggen wij iedereen in de watten.
-						</p>
+					<div class="col-2 contact-moreinfo">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12252.618245880205!2d4.4429338!3d51.0036731!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3e5cf705fdd41%3A0xbb5509188afe3a8d!2sHoogstraat%2012%2C%202800%20Mechelen!5e1!3m2!1snl!2sbe!4v1607719282214!5m2!1snl!2sbe"
+							width="100%"
+							height="300px"
+							frameborder="0"
+							style="border: 0"
+							allowfullscreen=""
+							aria-hidden="false"
+							tabindex="0"
+						></iframe>
+						<h1 class="">Extra info</h1>
+						<p>Hoogstraat 12,</p>
+						<p>2800 Mechelen</p>
+						<p>Tel: 0498 79 72 04</p>
+						<p>Email: info@j&amp;k.be</p>
+						<br />
+						<ion-icon class="facebook-icon" name="logo-facebook"></ion-icon>
+						<ion-icon class="twitter-icon" name="logo-twitter"></ion-icon>
+						<ion-icon class="instagram-icon" name="logo-instagram"></ion-icon>
 					</div>
 				</div>
 			</div>
@@ -167,5 +209,6 @@
 
 		<script src="javascript/menu.js"></script>
 		<script src="javascript/app.js"></script>
+		<script src="javascript/formulier-validatie.js"></script>
 	</body>
 </html>

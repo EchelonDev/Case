@@ -140,9 +140,9 @@ function controleer_aantalpersonen() {
 	}
 }
 
-// Versturen
+// Versturen van het boekingsformulier
 
-function verstuur() {
+function verstuur_boeking() {
 	voornaamTekst = document.getElementById("voornaam").value;
 	achternaamTekst = document.getElementById("achternaam").value;
 	bedrijfTekst = document.getElementById("bedrijf").value;
@@ -329,6 +329,96 @@ function verstuur() {
 			encodeURIComponent("\r\n\n") +
 			"Aantal kinderen: " +
 			encodeURIComponent(document.getElementById("aantalKinderen").value) +
+			encodeURIComponent("\r\n\n") +
+			"Extra info: " +
+			encodeURIComponent(document.getElementById("extraInfo").value);
+
+		window.location.href = link;
+	}
+}
+
+// Versturen van het contactformulier
+
+function verstuur_contact() {
+	voornaamTekst = document.getElementById("voornaam").value;
+	achternaamTekst = document.getElementById("achternaam").value;
+	telefoonTekst = document.getElementById("telefoon").value;
+	emailTekst = document.getElementById("email").value;
+
+	// Sectie Extra Info
+
+	extrainfoTekst = document.getElementById("extraInfo").value;
+
+	// Verzendklaar of niet?
+
+	verzendKlaar = true;
+
+	// Check alle values
+
+	// Kijken of value van VOORNAAM niet leeg is
+	if (voornaamTekst.length == 0) {
+		document.getElementById("voornaam_error").innerHTML = "Vul in a.u.b.";
+		verzendKlaar = false;
+	} else {
+		controleer_voornaam();
+	}
+
+	// Kijken of value van ACHTERNAAM niet leeg is
+	if (achternaamTekst.length == 0) {
+		document.getElementById("achternaam_error").innerHTML = "Vul in a.u.b.";
+		verzendKlaar = false;
+	} else {
+		controleer_achternaam();
+	}
+
+	// Kijken of value van TELEFOON niet leeg is
+	if (telefoonTekst.length == 0) {
+		document.getElementById("telefoon_error").innerHTML = "Vul in a.u.b.";
+		verzendKlaar = false;
+	} else {
+		controleer_telefoon();
+	}
+
+	// Kijken of value van EMAIL niet leeg is
+	if (emailTekst.length == 0) {
+		document.getElementById("email_error").innerHTML = "Vul in a.u.b.";
+		verzendKlaar = false;
+	} else {
+		controleer_email();
+	}
+
+	// Kijken of de voorwaarden geaccepteerd zijn
+
+	if (document.getElementById("voorwaardenAkkoord").checked == false) {
+		document.getElementById("voorwaardenAkkoord_error").innerHTML = "U bent niet akkoord gegaan met de voorwaarden";
+		verzendKlaar = false;
+	} else {
+		document.getElementById("voorwaardenAkkoord_error").innerHTML = "";
+	}
+
+	// Check of alles juist ingevuld is
+
+	if (verzendKlaar == true) {
+		let link =
+			"mailto:" +
+			encodeURIComponent("info@j&k;") +
+			encodeURIComponent(document.getElementById("email").value) +
+			"?cc=" +
+			encodeURIComponent("copy@j&k.be;") +
+			"&subject=" +
+			encodeURIComponent("BoekingsFormulier") +
+			"&body=" +
+			"Voornaam: " +
+			encodeURIComponent(document.getElementById("voornaam").value) +
+			encodeURIComponent("\r\n\n") +
+			"Achternaam: " +
+			encodeURIComponent(document.getElementById("achternaam").value) +
+			encodeURIComponent("\r\n\n") +
+			"Tel/GSM Nr: " +
+			encodeURIComponent(document.getElementById("telefoon").value) +
+			encodeURIComponent("\r\n\n") +
+			"Email: " +
+			encodeURIComponent(document.getElementById("email").value) +
 			encodeURIComponent("\r\n\n") +
 			"Extra info: " +
 			encodeURIComponent(document.getElementById("extraInfo").value);

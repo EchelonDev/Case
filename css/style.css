@@ -1,92 +1,162 @@
-/* button-indexmain-kamer */
-.button-kijk,
-.button-boeken-blue {
-	background-color: var(--blauw);
-	border-radius: 5px;
-	text-transform: capitalize;
-	margin-bottom: 40px;
-}
-.button-kijk:hover,
-.button-boeken-blue:hover {
-	color: var(--wit);
-	background-color: #394255;
-}
-.button-boeken-gold {
-	background-color: var(--goud);
-	border-radius: 5px;
-	text-transform: capitalize;
-	margin-bottom: 40px;
-}
-.button-boeken-gold:hover {
-	color: var(--wit);
-	background-color: #394255;
+/* Variabele Kleuren */
+/* Variabele Kleuren */
+/* Variabele Kleuren */
+
+:root {
+	--blauw: #242a36;
+	--lichtblauw: #3d465a;
+	--goud: #bda76e;
+	--wit: #fbfbfb;
 }
 
-/* indexpagina main welkom */
-/* indexpagina main welkom */
-/* indexpagina main welkom */
-.main-content-column p {
-	margin-bottom: 30px;
-	line-height: 1.4;
+/* Homepage */
+/* Homepage */
+/* Homepage */
+
+/* Welkom Sectie Homepage */
+/* Welkom Sectie Homepage */
+/* Welkom Sectie Homepage */
+
+.welkom {
+	margin: -1.5rem 0rem;
+	width: 100vw;
+	background: url(../images/background-pattern-gold.jpg);
 }
 
-/* indexpagina main kamers */
-/* indexpagina main kamers */
-/* indexpagina main kamers */
-.different-rooms {
+.welkom:focus {
+	border: none;
+}
+
+.welkom .container {
+	padding: 10rem 5rem;
 	display: flex;
-	flex-direction: row;
+	align-items: center;
+	height: 100%;
+}
+
+.welkom-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.welkom-container h1 {
+	margin: 0px 0px 50px 0px;
+}
+
+/* Banner Sectie Homepage */
+/* Banner Sectie Homepage */
+/* Banner Sectie Homepage */
+
+.content-banner {
+	position: relative;
+	margin: -1.5rem 0rem;
+	height: 400px;
+	background: url(../images/bg.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+}
+
+.content-banner:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	background-image: linear-gradient(120deg, var(--blauw), var(--goud));
+	opacity: 0.7;
+	z-index: 1;
+}
+
+/* Kamers Sectie Homepage */
+/* Kamers Sectie Homepage */
+/* Kamers Sectie Homepage */
+
+.kamers .container {
+	padding: 10rem 2rem;
+}
+
+.kamer-container {
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 }
-.titel-room {
-	text-align: center;
-}
-.different-rooms-column {
-	text-align: center;
-}
-.different-rooms h3 {
+
+.kamer-container h1 {
 	color: var(--blauw);
-	font-family: "Poppins", sans-serif;
-	font-size: 2rem;
-	margin-bottom: 10px;
-	text-align: center;
-}
-.images-different-rooms {
-	margin-bottom: 40px;
-	box-shadow: 5px 10px 18px #888888;
+	font-size: 2.8rem;
 }
 
-/* kamerpagina 2-persoonskamer */
-/* kamerpagina 2-persoonskamer */
-/* kamerpagina 2-persoonskamer */
-
-.room-by-room-background-blue,
-.room-by-room-background-white {
-	max-width: 1080px;
-	width: 75%;
-	padding: 0 2rem;
-	margin: 0 auto;
-}
-.room-by-room-background-blue {
+.kamer-container .boeken-button {
+	border: none;
 	background-color: var(--blauw);
-	padding: 20px 0;
+	color: var(--wit);
+	border-radius: 5px;
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+	padding: 15px 30px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.kamer-container .boeken-button:hover {
+	background-color: var(--lichtblauw);
 	color: var(--wit);
 }
-.room-by-room-background-white {
-	background-color: var(--wit);
-	padding: 20px 0;
+
+/* Contactpagina */
+/* Contactpagina */
+/* Contactpagina */
+
+.contact-moreinfo iframe {
+	margin: 35px 0px 15px 0px;
 }
-.room-by-room h1 {
-	text-align: center;
+
+.contact-moreinfo h1 {
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	font-size: 2rem;
 }
-.room-by-room-tweepersoonskamer p {
-	margin-bottom: 30px;
-	line-height: 1.4;
+
+.facebook-icon {
+	width: 50px;
+	height: 50px;
+	max-width: initial;
+	min-width: initial;
+	min-height: initial;
+	background-color: var(--blauw);
+	border-radius: 3px;
+	padding: 10px;
+	color: white;
+	cursor: pointer;
 }
-.room-by-room-tweepersoonskamer li {
-	line-height: 1.6;
+
+.twitter-icon {
+	width: 50px;
+	height: 50px;
+	max-width: initial;
+	min-width: initial;
+	min-height: initial;
+	background-color: var(--blauw);
+	border-radius: 3px;
+	padding: 10px;
+	color: white;
+	cursor: pointer;
 }
-.room-by-room h2 {
-	font-size: 2.5rem;
-	padding-left: 25px;
+
+.instagram-icon {
+	width: 50px;
+	height: 50px;
+	max-width: initial;
+	min-width: initial;
+	min-height: initial;
+	background-color: var(--blauw);
+	border-radius: 3px;
+	padding: 10px;
+	color: white;
+	cursor: pointer;
 }

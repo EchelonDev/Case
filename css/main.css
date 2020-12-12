@@ -18,7 +18,9 @@
 
 :root {
 	--blauw: #242a36;
+	--lichtblauw: #3d465a;
 	--goud: #bda76e;
+	--lichtgoud: #f5e3b5;
 	--wit: #fbfbfb;
 }
 
@@ -35,6 +37,7 @@ html {
 body {
 	font-family: "Poppins", sans-serif, "Arial", sans-serif;
 	font-size: 1.6rem;
+	line-height: 2.5rem;
 	height: 100%;
 }
 
@@ -47,13 +50,13 @@ h6 {
 	font-family: "Marcellus", serif, "Arial", serif;
 	font-size: 4.2rem;
 	color: var(--goud);
-	margin: 0px 0px 25px 0px;
 }
 
 p {
 	font-family: "Poppins", sans-serif;
 	font-weight: 300;
 	font-size: 1.8rem;
+	margin-top: 1em;
 }
 
 a {
@@ -67,8 +70,6 @@ ul {
 
 img {
 	max-width: 100%;
-	min-width: 280px;
-	min-height: 95%;
 	height: auto;
 	object-fit: cover;
 }
@@ -82,7 +83,7 @@ img {
 .container {
 	max-width: 1080px;
 	width: 75%;
-	padding: 0 2rem;
+	padding: 3rem 2rem;
 	margin: 0 auto;
 }
 
@@ -109,32 +110,44 @@ img {
 /* Globale Flex/Grid Framework */
 /* Globale Flex/Grid Framework */
 
+.heading {
+	width: 100%;
+	text-align: center;
+}
+
+.heading:after {
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+}
+
 .row {
 	width: 100%;
-	height: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 50px 0px;
 }
 
 .col-1 {
-	flex: 2 2 auto;
+	flex: 1 1 auto;
 	width: 95%;
 	min-width: 320px;
 	padding: 25px;
 }
 
 .col-2 {
-	flex: 2 2 auto;
+	flex: 1 1 auto;
 	width: 47.5%;
 	min-width: 320px;
 	padding: 25px;
 }
 
 .col-3 {
-	flex: 2 2 auto;
+	flex: 1 1 auto;
 	width: 31.66666%;
 	min-width: 280px;
 	padding: 25px;
@@ -191,18 +204,22 @@ img {
 	z-index: 1500;
 }
 
+.hamburger-menu ion-icon {
+	font-size: 55px;
+}
+
 /* X icon om menu te sluiten niet tonen */
-.hamburger-menu .fa-times {
+.hamburger-menu .menu-close-icon {
 	display: none;
 }
 
 /* X icon in menu tonen zodra het open geklikt wordt */
-.menu-open .hamburger-menu .fa-times {
+.menu-open .hamburger-menu .menu-close-icon {
 	display: block;
 }
 
 /* Hamburger icon in menu verbergen wanneer menu open is */
-.menu-open .hamburger-menu .fa-bars {
+.menu-open .hamburger-menu .menu-icon {
 	display: none;
 }
 
@@ -404,8 +421,7 @@ img {
 
 .nieuwsbrief {
 	width: 100vw;
-	background-color: var(--goud);
-	margin-top: 50px;
+	background: linear-gradient(120deg, var(--goud), var(--lichtgoud));
 	padding: 20px 0px;
 }
 
@@ -554,7 +570,7 @@ img {
 		justify-content: center;
 		align-items: center;
 		position: relative;
-		left: 30px;
+		right: 10px;
 	}
 
 	.nav-logo {
