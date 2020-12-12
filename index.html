@@ -44,6 +44,9 @@
 						<ion-icon class="menu-close-icon" name="close"></ion-icon>
 					</div>
 					<ul class="nav-list">
+						<li class="nav-item home-button">
+							<a href="index.html" class="nav-link">Home</a>
+						</li>
 						<li class="nav-item">
 							<a href="kamers.html" class="nav-link">Kamers</a>
 						</li>
@@ -89,13 +92,15 @@
 						<h2>Boek een kamer</h2>
 						<div class="input-group">
 							<label for="aankomstdatum">Aankomstdatum</label>
-							<input id="aankomstdatum" type="date" />
+							<input id="aankomstDatum" type="date" />
 						</div>
 						<div class="input-group">
 							<label for="vertrekdatum">Vertrekdatum</label>
-							<input id="vertrekdatum" type="date" />
+							<input id="vertrekDatum" type="date" />
 						</div>
-						<a class="button button-beschikbaarheid" href="">Beschikbaarheid tonen</a>
+						<a id="beschikbaarheid-tonen" onclick="beschikbaarheid()" class="button button-beschikbaarheid" href=""
+							>Beschikbaarheid tonen</a
+						>
 					</form>
 				</div>
 			</section>
@@ -199,5 +204,6 @@
 		</footer>
 
 		<script src="javascript/menu.js"></script>
+		<script src="javascript/kamer-beschikbaarheid.js"></script>
 	</body>
 </html>

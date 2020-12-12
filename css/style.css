@@ -121,6 +121,15 @@
 /* KAMERS.HTML */
 /* KAMERS.HTML */
 
+.boeken-form h1 {
+	color: var(--goud);
+	font-family: "Poppins", sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 3rem;
+	margin: 0;
+}
+
 .tweepersoonskamer {
 	margin-top: -15px;
 	padding: 50px 0px;
@@ -257,15 +266,19 @@
 	}
 }
 
-/* ------------ */
-/* ------------ */
-/* boeken */
-/* ------------ */
-/* ------------ */
+/* ----------------- */
+/* ----------------- */
+/* VERGADERZAAL.HTML */
+/* ----------------- */
+/* ----------------- */
 
-.boeking h1 {
-	color: var(--blauw);
-}
+/* ----------------- */
+/* ----------------- */
+/* KAMER-BOEKEN.HTML */
+/* ----------------- */
+/* ----------------- */
+
+/* Nog geen styling nodig */
 
 /* ------------ */
 /* ------------ */
@@ -320,4 +333,10 @@
 	padding: 10px;
 	color: white;
 	cursor: pointer;
+}
+
+.contact-moreinfo iframe {
+	width: 100%;
+	height: 300px;
+	border: 0;
 }

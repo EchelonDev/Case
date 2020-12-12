@@ -398,6 +398,7 @@ img {
 	font-weight: 600;
 	font-size: 3rem;
 	margin: 0;
+	padding-bottom: 0px;
 }
 
 .kamer-boeken .input-group {
@@ -607,8 +608,8 @@ img {
 		display: initial;
 	}
 
-	.nav-logo {
-		display: initial;
+	.home-button {
+		display: none;
 	}
 
 	.nav-logo img {
