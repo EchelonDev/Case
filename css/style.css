@@ -365,6 +365,15 @@
 	border: 0;
 }
 
+.contact-moreinfo a {
+	color: var(--blauw);
+	transition: color 0.3s ease;
+}
+
+.contact-moreinfo a:hover {
+	color: var(--goud);
+}
+
 /* ---------------- */
 /* ---------------- */
 /* Voorwaarden.HTML */

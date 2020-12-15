@@ -541,6 +541,18 @@ img {
 	color: var(--wit);
 }
 
+.footer a {
+	margin: 5px 0px;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.6rem;
+	color: var(--wit);
+	transition: color 0.3s ease;
+}
+
+.footer a:hover {
+	color: var(--goud);
+}
+
 /* Media Queries */
 /* Media Queries */
 /* Media Queries */
@@ -601,7 +613,7 @@ img {
 		justify-content: center;
 		align-items: center;
 		position: relative;
-		right: 24px;
+		right: 18px;
 	}
 
 	.nav-logo {
