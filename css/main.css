@@ -618,3 +618,31 @@ img {
 		height: auto;
 	}
 }
+
+@media screen and (max-width: 760px) {
+	h1 {
+		font-size: 3.4rem;
+	}
+
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 3.2rem;
+	}
+
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-size: 2.8rem;
+	}
+}

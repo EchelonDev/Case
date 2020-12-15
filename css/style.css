@@ -58,6 +58,9 @@
 	background-size: cover;
 	background-position: center;
 	z-index: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .content-banner:before {
@@ -70,6 +73,27 @@
 	background-image: linear-gradient(120deg, var(--blauw), var(--goud));
 	opacity: 0.7;
 	z-index: 1;
+}
+
+.content-banner h2 {
+	text-align: center;
+	z-index: 2;
+	color: var(--wit);
+	padding: 0px 25px;
+}
+
+.feestdagen {
+	font-family: "Marcellus", serif, "Arial", serif;
+	color: #bda76e;
+	font-weight: 100;
+	font-size: 1.8em;
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+}
+
+.feestdagen .letter {
+	display: inline-block;
+	line-height: 1em;
 }
 
 /* Kamers Sectie Homepage */
