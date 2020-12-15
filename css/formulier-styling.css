@@ -58,6 +58,15 @@ legend {
 	flex-direction: column;
 }
 
+.voorwaarden a {
+	color: var(--goud);
+	transition: color 0.3s ease;
+}
+
+.voorwaarden a:hover {
+	color: var(--lichtgoud);
+}
+
 /* Form groups */
 /* Form groups */
 /* Form groups */
@@ -188,7 +197,7 @@ legend {
 
 .voorwaarden .form-group input[type="checkbox"] {
 	position: relative;
-	top: 1px;
+	top: 5px;
 }
 
 .voorwaarden .form-group input[type="button"] {

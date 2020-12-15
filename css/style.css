@@ -72,6 +72,20 @@
 	z-index: 1;
 }
 
+.banner-tekst {
+	font-family: "Marcellus", serif, "Arial", serif;
+	color: #bda76e;
+	font-weight: 200;
+	font-size: 1.8em;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+}
+
+.bannertekst .letter {
+	display: inline-block;
+	line-height: 1em;
+}
+
 /* Kamers Sectie Homepage */
 /* Kamers Sectie Homepage */
 /* Kamers Sectie Homepage */
@@ -194,7 +208,7 @@
 
 .kamer-2 h4 {
 	font-family: "Poppins", sans-serif;
-	color: rgb(216, 216, 216);
+	color: var(--goud);
 }
 
 .kamer-2 p {
@@ -278,7 +292,7 @@
 /* ----------------- */
 /* ----------------- */
 
-/* Nog geen styling nodig */
+/* Geen styling nodig */
 
 /* ------------ */
 /* ------------ */
@@ -339,4 +353,46 @@
 	width: 100%;
 	height: 300px;
 	border: 0;
+}
+
+/* ---------------- */
+/* ---------------- */
+/* Voorwaarden.HTML */
+/* ---------------- */
+/* ---------------- */
+
+.voorwaardenpagina {
+	padding: 50px 0px;
+}
+
+.title-prijs {
+	flex-wrap: wrap;
+	flex-direction: column;
+	font-size: 1.5em;
+	padding-top: 3rem;
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+	color: var(--goud);
+}
+
+.kamer-1-persoon,
+.kamer-2-personen,
+.extra-optie {
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	border: 2px solid black;
+	padding: 0.5em;
+}
+th {
+	text-align: center;
+	padding-bottom: 1em;
+	color: black;
+	font-size: 1em;
+}
+td {
+	text-align: center;
+	color: black;
+	font-size: 1em;
 }
