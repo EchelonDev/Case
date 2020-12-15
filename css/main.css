@@ -504,6 +504,12 @@ img {
 	background-color: #394255;
 }
 
+.nieuwsbrief-form .clear {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+
 /* Footer */
 /* Footer */
 /* Footer */

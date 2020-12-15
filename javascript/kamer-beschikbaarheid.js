@@ -4,9 +4,6 @@ let vertrekdate;
 aankomstdate = document.getElementById("aankomstDatum").value;
 vertrekdate = document.getElementById("vertrekDatum").value;
 
-console.log(vertrekdate);
-console.log(aankomstdate);
-
 function beschikbaarheid() {
 	let number = Math.floor(Math.random() * 11);
 
