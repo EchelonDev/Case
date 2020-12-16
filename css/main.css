@@ -174,10 +174,6 @@ img {
 	background-color: var(--lichtblauw);
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-	filter: invert() brightness(50%);
-}
-
 /* Globale Flex/Grid Framework */
 /* Globale Flex/Grid Framework */
 /* Globale Flex/Grid Framework */
