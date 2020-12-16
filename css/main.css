@@ -469,12 +469,17 @@ html:not([data-scroll="0"]) .nav-link {
 }
 
 .kamer-boeken .input-group input[type="date"] {
+	min-width: 180px;
 	border: none;
 	border: 1px solid var(--goud);
 	height: 45px;
 	background-color: rgba(0, 0, 0, 0);
 	color: grey;
 	text-align: center;
+}
+
+.kamer-boeken .input-group input[type="date"]::-webkit-calendar-picker-indicator {
+	filter: invert() brightness(50%);
 }
 
 .kamer-boeken .boeken-form {
