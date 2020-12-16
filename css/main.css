@@ -234,6 +234,7 @@ img {
 	top: 0;
 	left: 0;
 	z-index: 1000;
+	transition: height 0.5s ease;
 }
 
 .logo img {
@@ -248,6 +249,25 @@ img {
 	padding: 0 2rem;
 	margin: 0 auto;
 	background: linear-gradient(180deg, rgba(36, 42, 54, 1) 0%, rgba(36, 42, 54, 1) 65%, rgba(36, 42, 54, 0) 100%);
+	transition: background 0.2s ease;
+}
+
+html:not([data-scroll="0"]) .header-nav {
+	height: initial;
+}
+
+html:not([data-scroll="0"]) .header-nav .container-full {
+	background: var(--blauw);
+}
+
+html:not([data-scroll="0"]) .nav-logo img {
+	width: 50px;
+	min-width: 50px;
+	height: auto;
+}
+
+html:not([data-scroll="0"]) .nav-link {
+	font-size: 1.2rem;
 }
 
 /* MOBILE MENU */
@@ -528,8 +548,8 @@ img {
 .nieuwsbrief-form input[type="email"] {
 	border: 1px solid var(--blauw);
 	color: grey;
-	height: 28px;
-	width: 220px;
+	height: 32px;
+	width: 300px;
 	text-align: center;
 }
 
@@ -653,6 +673,7 @@ img {
 	.nav-link {
 		font-size: 1.5rem;
 		font-weight: normal;
+		transition: font-size 0.5s ease;
 	}
 
 	.logo {
@@ -678,6 +699,7 @@ img {
 		width: 100px;
 		min-width: 100px;
 		height: auto;
+		transition: all 0.5s ease;
 	}
 }
 
