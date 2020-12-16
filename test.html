@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<title>Titel</title>
+	</head>
+
+	<style>
+		:root {
+			--blauw: #242a36;
+			--lichtblauw: #3d465a;
+			--goud: #bda76e;
+			--lichtgoud: #f5e3b5;
+			--wit: #fbfbfb;
+		}
+
+		.button-light {
+			font-family: "Poppins", sans-serif;
+			font-size: 16px;
+			padding: 15px 25px;
+			background-color: var(--goud);
+			border: none;
+			color: white;
+			text-decoration: none;
+			transition: all 0.3s ease;
+			cursor: pointer;
+		}
+
+		.button-light:hover {
+			background-color: var(--lichtgoud);
+		}
+
+		.button-dark {
+			font-family: "Poppins", sans-serif;
+			font-size: 16px;
+			padding: 15px 25px;
+			background-color: var(--blauw);
+			border: none;
+			color: white;
+			text-decoration: none;
+			transition: all 0.3s ease;
+			cursor: pointer;
+		}
+
+		.button-dark:hover {
+			background-color: var(--lichtblauw);
+		}
+	</style>
+	<body>
+		<button class="button-light">Verzenden</button>
+
+		<button class="button-dark">Verzenden</button>
+
+		<a class="button-light" href="#">Verzenden</a>
+
+		<a class="button-dark" href="#">Verzenden</a>
+	</body>
+</html>
