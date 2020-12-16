@@ -265,13 +265,9 @@ html:not([data-scroll="0"]) .header-nav .container-full {
 }
 
 html:not([data-scroll="0"]) .nav-logo img {
-	width: 50px;
-	min-width: 50px;
+	width: 60px;
+	min-width: 60px;
 	height: auto;
-}
-
-html:not([data-scroll="0"]) .nav-link {
-	font-size: 1.2rem;
 }
 
 /* MOBILE MENU */
