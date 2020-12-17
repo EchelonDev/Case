@@ -615,7 +615,7 @@ html:not([data-scroll="0"]) .nav-logo img {
 .footer a {
 	margin: 5px 0px;
 	font-family: "Poppins", sans-serif;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	color: var(--wit);
 	transition: color 0.3s ease;
 }
